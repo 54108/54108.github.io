@@ -21,9 +21,6 @@ jobs:
     - run: npm install -g bats
     
     - run: bats -v
-
-    - name: Build with Jekyll # 假设使用Jekyll
-      run: jekyll build
       
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.3.0
