@@ -36,14 +36,16 @@ author: Pd.ch
 
 我选择的是使用pip进行安装。你可以先使用conda创建一个虚拟环境，python版本推荐3.11。
 安装命令
-
-    python -m pip install torch==2.1.0.post2 torchvision==0.16.0.post2 torchaudio==2.1.0.post2 intel-extension-for-pytorch==2.1.30.post0 oneccl_bind_pt==2.1.300+xpu --extra-index-url https://pytorch-extension.intel.com/release-whl/stable/xpu/cn/
-
+~~~
+python -m pip install torch==2.1.0.post2 torchvision==0.16.0.post2 torchaudio==2.1.0.post2 intel-extension-for-pytorch==2.1.30.post0 oneccl_bind_pt==2.1.300+xpu --extra-index-url https://pytorch-extension.intel.com/release-whl/stable/xpu/cn/
+~~~
 完成后进行测试
-
-    source /opt/intel/oneapi/setvars.sh
-    python -c "import torch; import intel_extension_for_pytorch as ipex; print(torch.__version__); print(ipex.__version__); [print(f'[{i}]: {torch.xpu.get_device_properties(i)}') for i in range(torch.xpu.device_count())];"
-
+~~~
+source /opt/intel/oneapi/setvars.sh
+~~~
+~~~
+python -c "import torch; import intel_extension_for_pytorch as ipex; print(torch.__version__); print(ipex.__version__); [print(f'[{i}]: {torch.xpu.get_device_properties(i)}') for i in range(torch.xpu.device_count())];"
+~~~
 最后成功识别到显卡即为安装成功。
 前往example进行愉快的玩耍吧<https://intel.github.io/intel-extension-for-pytorch/xpu/2.1.30+xpu/tutorials/examples.html>。
 
