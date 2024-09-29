@@ -8,6 +8,8 @@ author: Pd.ch
 ---
 
 ###### 说明：Windows下也可以进行环境搭建，但是个人更偏爱Debian。
+###### **特别注意：本文·以不具备时效性。建议参考以下外国博客。**
+<https://christianjmills.com/posts/intel-pytorch-extension-tutorial/native-ubuntu/>
 
 <!-- more -->
 
