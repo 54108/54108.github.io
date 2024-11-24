@@ -12,8 +12,8 @@ author: Pd.ch
 ###### **Update:pytorch在24年10月中旬发布了2.5版本,添加了Intel GPU支持,使用以下代码以启用.**
 
 这是pytorch官方的链接<https://pytorch.org/docs/main/notes/get_start_xpu.html>
-我们需要准备好GPU驱动,oneAPI.
-不过他仍然处于Preview版本
+
+我们需要准备好GPU驱动,oneAPI.(不过现在仍然处于Preview版本)
 ```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/test/xpu
 ```

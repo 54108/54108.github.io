@@ -2,7 +2,8 @@
 layout: post
 title: "简单介绍一下我本人的环境搭建"
 date:   2024-9-29
-tags: [deeplearning env setup]
+tags: [deeplearning]
+tags: [env setup]
 comments: true
 author: Pd.ch
 ---
