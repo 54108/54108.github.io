@@ -8,7 +8,17 @@ author: Pd.ch
 ---
 
 ###### 说明：Windows下也可以进行环境搭建，但是个人更偏爱Debian。
-###### **特别注意：本文·以不具备时效性。建议参考以下外国博客。**
+
+###### **Update:pytorch在24年10月中旬发布了2.5版本,添加了Intel GPU支持,使用以下代码以启用.**
+
+这是pytorch官方的链接<https://pytorch.org/docs/main/notes/get_start_xpu.html>
+我们需要准备好GPU驱动,oneAPI.
+不过他仍然处于Preview版本
+```
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/test/xpu
+```
+
+###### **以下外国博客也可参考,我仍然只推荐使用torch2.5preview**
 <https://christianjmills.com/posts/intel-pytorch-extension-tutorial/native-ubuntu/>
 
 <!-- more -->
